@@ -1,0 +1,179 @@
+{
+  "schemaVersion": "1.1.0",
+  "generatedAt": "2026-07-06T11:14:44Z",
+  "generator": {
+    "name": "devata-snapshot-publisher",
+    "version": "0.1.0",
+    "method": "read-only Kubernetes API via a scoped ServiceAccount"
+  },
+  "freshness": {
+    "clusterPowered": true,
+    "maxAgeHours": 24
+  },
+  "cluster": {
+    "name": "devata",
+    "distribution": "Talos Linux",
+    "osVersion": "v1.11.5",
+    "kubernetesVersion": "v1.34.1",
+    "cni": {
+      "name": "Cilium",
+      "notes": "eBPF dataplane, kube-proxy replacement, Hubble observability"
+    },
+    "loadBalancer": "MetalLB (L2)",
+    "gitops": "Argo CD app-of-apps; zero imperative Helm state",
+    "ingress": "none yet; Gateway API planned",
+    "secretsManagement": "Sealed Secrets",
+    "publicExposure": "none; behind CGNAT, outbound-only"
+  },
+  "totals": {
+    "nodes": 4,
+    "nodesReady": 4,
+    "vcpu": 24,
+    "memoryGiB": 16.1,
+    "namespaces": 17,
+    "exposedServices": 2,
+    "persistentVolumeClaims": 3
+  },
+  "nodes": [
+    {
+      "id": "cp-1",
+      "role": "control-plane",
+      "status": "Ready",
+      "vcpu": 4,
+      "memoryGiB": 3.3,
+      "ageDays": 213
+    },
+    {
+      "id": "worker-1",
+      "role": "worker",
+      "status": "Ready",
+      "vcpu": 2,
+      "memoryGiB": 2.9,
+      "ageDays": 211
+    },
+    {
+      "id": "worker-2",
+      "role": "worker",
+      "status": "Ready",
+      "vcpu": 2,
+      "memoryGiB": 2.9,
+      "ageDays": 211
+    },
+    {
+      "id": "worker-3",
+      "role": "worker",
+      "status": "Ready",
+      "vcpu": 16,
+      "memoryGiB": 7.1,
+      "ageDays": 18
+    }
+  ],
+  "services": [
+    {
+      "name": "Grafana",
+      "exposure": "lan-only",
+      "status": "up",
+      "purpose": "dashboards over cluster metrics"
+    },
+    {
+      "name": "Hubble UI",
+      "exposure": "lan-only",
+      "status": "up",
+      "purpose": "eBPF network flow observability"
+    },
+    {
+      "name": "Argo CD",
+      "exposure": "lan-only",
+      "status": "up",
+      "purpose": "GitOps reconciler UI"
+    }
+  ],
+  "observability": [
+    {
+      "name": "kube-prometheus-stack",
+      "purpose": "metrics, alerting, Grafana dashboards"
+    },
+    {
+      "name": "Loki",
+      "purpose": "log aggregation"
+    },
+    {
+      "name": "Promtail",
+      "purpose": "log shipping from every node"
+    },
+    {
+      "name": "Hubble",
+      "purpose": "eBPF network flow visibility"
+    }
+  ],
+  "storage": {
+    "defaultClass": "local-path",
+    "replicated": false,
+    "claims": 3,
+    "totalGiB": 12
+  },
+  "gpu": {
+    "present": true,
+    "usable": false,
+    "model": "GTX 1650 Ti (4 GB)",
+    "reason": "card firmware fault, driver cannot read the VBIOS; nvidia.com/gpu never advertised"
+  },
+  "apps": [
+    {
+      "name": "argocd",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "cilium",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "devata-root",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "hello",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "kps",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "loki",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "metallb",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "nvidia-device-plugin",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "promtail",
+      "synced": true,
+      "healthy": true
+    },
+    {
+      "name": "sealed-secrets",
+      "synced": true,
+      "healthy": true
+    }
+  ],
+  "workloads": {
+    "deployments": 22,
+    "daemonsets": 7,
+    "statefulsets": 3,
+    "pods": 57
+  }
+}
