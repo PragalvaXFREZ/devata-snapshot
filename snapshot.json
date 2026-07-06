@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-07-06T11:14:44Z",
+  "generatedAt": "2026-07-06T11:20:57Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.1.0",
@@ -30,7 +30,7 @@
     "nodesReady": 4,
     "vcpu": 24,
     "memoryGiB": 16.1,
-    "namespaces": 17,
+    "namespaces": 18,
     "exposedServices": 2,
     "persistentVolumeClaims": 3
   },
@@ -168,12 +168,17 @@
       "name": "sealed-secrets",
       "synced": true,
       "healthy": true
+    },
+    {
+      "name": "snapshot-publisher",
+      "synced": true,
+      "healthy": true
     }
   ],
   "workloads": {
     "deployments": 22,
     "daemonsets": 7,
     "statefulsets": 3,
-    "pods": 57
+    "pods": 58
   }
 }
