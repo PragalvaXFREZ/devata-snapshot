@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1.0",
-  "generatedAt": "2026-07-07T12:00:02Z",
+  "generatedAt": "2026-07-07T13:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.1.0",
@@ -49,7 +49,7 @@
       "status": "Ready",
       "vcpu": 2,
       "memoryGiB": 2.9,
-      "ageDays": 212
+      "ageDays": 213
     },
     {
       "id": "worker-2",
@@ -57,7 +57,7 @@
       "status": "Ready",
       "vcpu": 2,
       "memoryGiB": 2.9,
-      "ageDays": 212
+      "ageDays": 213
     },
     {
       "id": "worker-3",
