@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2.0",
-  "generatedAt": "2026-07-08T18:00:02Z",
+  "generatedAt": "2026-07-08T19:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.2.0",
@@ -20,7 +20,7 @@
       "notes": "eBPF dataplane, kube-proxy replacement, Hubble observability"
     },
     "loadBalancer": "MetalLB (L2)",
-    "gitops": "Argo CD app-of-apps; zero imperative Helm state",
+    "gitops": "Argo CD app-of-apps",
     "ingress": "none yet; Gateway API planned",
     "secretsManagement": "Sealed Secrets",
     "publicExposure": "none; behind CGNAT, outbound-only"
@@ -73,7 +73,7 @@
       "name": "Grafana",
       "exposure": "lan-only",
       "status": "up",
-      "purpose": "dashboards over cluster metrics"
+      "purpose": "cluster metrics dashboards"
     },
     {
       "name": "Hubble UI",
@@ -103,7 +103,7 @@
     },
     {
       "name": "Hubble",
-      "purpose": "eBPF network flow visibility"
+      "purpose": "eBPF network flow observability"
     }
   ],
   "storage": {
@@ -186,7 +186,7 @@
       "url": "https://artifacthub.io/image/e16221f4-a3b1-49f6-9b65-cb4dbf30ed83",
       "from": "artifacthub.io/packages/helm/argo/argo-cd"
     },
-    "Argo CD app-of-apps; zero imperative Helm state": {
+    "Argo CD app-of-apps": {
       "url": "https://artifacthub.io/image/e16221f4-a3b1-49f6-9b65-cb4dbf30ed83",
       "from": "artifacthub.io/packages/helm/argo/argo-cd"
     },
