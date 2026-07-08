@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.1.0",
-  "generatedAt": "2026-07-08T04:00:02Z",
+  "schemaVersion": "1.2.0",
+  "generatedAt": "2026-07-08T05:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "method": "read-only Kubernetes API via a scoped ServiceAccount"
   },
   "freshness": {
@@ -180,5 +180,47 @@
     "daemonsets": 7,
     "statefulsets": 3,
     "pods": 60
+  },
+  "logos": {
+    "Argo CD": {
+      "url": "https://artifacthub.io/image/e16221f4-a3b1-49f6-9b65-cb4dbf30ed83",
+      "from": "artifacthub.io/packages/helm/argo/argo-cd"
+    },
+    "Argo CD app-of-apps; zero imperative Helm state": {
+      "url": "https://artifacthub.io/image/e16221f4-a3b1-49f6-9b65-cb4dbf30ed83",
+      "from": "artifacthub.io/packages/helm/argo/argo-cd"
+    },
+    "Cilium": {
+      "url": "https://artifacthub.io/image/2ae85972-bf12-41a5-afb2-9b1147b2aa56",
+      "from": "artifacthub.io/packages/helm/cilium/cilium"
+    },
+    "Grafana": {
+      "url": "https://artifacthub.io/image/029d6bb0-215f-414e-be87-c71265cd93a1",
+      "from": "artifacthub.io/packages/helm/bitnami/grafana"
+    },
+    "Kubernetes": {
+      "url": "https://artifacthub.io/image/4bb8aa53-932e-4294-9983-704a10fca032",
+      "from": "artifacthub.io/packages/helm/kvaps/kubernetes"
+    },
+    "Loki": {
+      "url": "https://artifacthub.io/image/6e0c6a8b-99fe-4ed5-a2ff-7799ba373223",
+      "from": "artifacthub.io/packages/helm/grafana-community/loki"
+    },
+    "MetalLB (L2)": {
+      "url": "https://artifacthub.io/image/68f1b3c9-94da-43f0-89df-a759a8cff818",
+      "from": "artifacthub.io/packages/helm/metallb/metallb"
+    },
+    "Promtail": {
+      "url": "https://artifacthub.io/image/c3c27bcf-e74a-416f-85bb-111ccf93966e",
+      "from": "artifacthub.io/packages/helm/kube-ops/promtail"
+    },
+    "Sealed Secrets": {
+      "url": "https://artifacthub.io/image/ac4848cf-4c78-4511-945d-06a1aa0ccf5a",
+      "from": "artifacthub.io/packages/helm/bitnami/sealed-secrets"
+    },
+    "kube-prometheus-stack": {
+      "url": "https://artifacthub.io/image/0503add5-3fce-4b63-bbf3-b9f649512a86",
+      "from": "artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack"
+    }
   }
 }
