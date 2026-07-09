@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.2.0",
-  "generatedAt": "2026-07-09T11:00:02Z",
+  "schemaVersion": "1.3.0",
+  "generatedAt": "2026-07-09T12:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "method": "read-only Kubernetes API via a scoped ServiceAccount"
   },
   "freshness": {
@@ -70,40 +70,14 @@
   ],
   "services": [
     {
-      "name": "Grafana",
+      "name": "hubble-ui",
       "exposure": "lan-only",
-      "status": "up",
-      "purpose": "cluster metrics dashboards"
+      "status": "up"
     },
     {
-      "name": "Hubble UI",
+      "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "up",
-      "purpose": "eBPF network flow observability"
-    },
-    {
-      "name": "Argo CD",
-      "exposure": "lan-only",
-      "status": "up",
-      "purpose": "GitOps reconciler UI"
-    }
-  ],
-  "observability": [
-    {
-      "name": "kube-prometheus-stack",
-      "purpose": "metrics, alerting, Grafana dashboards"
-    },
-    {
-      "name": "Loki",
-      "purpose": "log aggregation"
-    },
-    {
-      "name": "Promtail",
-      "purpose": "log shipping from every node"
-    },
-    {
-      "name": "Hubble",
-      "purpose": "eBPF network flow observability"
+      "status": "up"
     }
   ],
   "storage": {
@@ -122,12 +96,14 @@
     {
       "name": "argocd",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "cilium",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "devata-root",
@@ -137,42 +113,50 @@
     {
       "name": "hello",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "workload"
     },
     {
       "name": "kps",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "loki",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "metallb",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "nvidia-device-plugin",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "promtail",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "sealed-secrets",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "platform"
     },
     {
       "name": "snapshot-publisher",
       "synced": true,
-      "healthy": true
+      "healthy": true,
+      "tier": "workload"
     }
   ],
   "workloads": {
@@ -182,10 +166,6 @@
     "pods": 60
   },
   "logos": {
-    "Argo CD": {
-      "url": "https://artifacthub.io/image/e16221f4-a3b1-49f6-9b65-cb4dbf30ed83",
-      "from": "artifacthub.io/packages/helm/argo/argo-cd"
-    },
     "Argo CD app-of-apps": {
       "url": "https://artifacthub.io/image/e16221f4-a3b1-49f6-9b65-cb4dbf30ed83",
       "from": "artifacthub.io/packages/helm/argo/argo-cd"
@@ -194,33 +174,45 @@
       "url": "https://artifacthub.io/image/2ae85972-bf12-41a5-afb2-9b1147b2aa56",
       "from": "artifacthub.io/packages/helm/cilium/cilium"
     },
-    "Grafana": {
-      "url": "https://artifacthub.io/image/029d6bb0-215f-414e-be87-c71265cd93a1",
-      "from": "artifacthub.io/packages/helm/bitnami/grafana"
-    },
     "Kubernetes": {
       "url": "https://artifacthub.io/image/4bb8aa53-932e-4294-9983-704a10fca032",
       "from": "artifacthub.io/packages/helm/kvaps/kubernetes"
-    },
-    "Loki": {
-      "url": "https://artifacthub.io/image/6e0c6a8b-99fe-4ed5-a2ff-7799ba373223",
-      "from": "artifacthub.io/packages/helm/grafana-community/loki"
     },
     "MetalLB (L2)": {
       "url": "https://artifacthub.io/image/68f1b3c9-94da-43f0-89df-a759a8cff818",
       "from": "artifacthub.io/packages/helm/metallb/metallb"
     },
-    "Promtail": {
-      "url": "https://artifacthub.io/image/c3c27bcf-e74a-416f-85bb-111ccf93966e",
-      "from": "artifacthub.io/packages/helm/kube-ops/promtail"
-    },
     "Sealed Secrets": {
       "url": "https://artifacthub.io/image/ac4848cf-4c78-4511-945d-06a1aa0ccf5a",
       "from": "artifacthub.io/packages/helm/bitnami/sealed-secrets"
     },
-    "kube-prometheus-stack": {
-      "url": "https://artifacthub.io/image/0503add5-3fce-4b63-bbf3-b9f649512a86",
-      "from": "artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack"
+    "argocd": {
+      "url": "https://artifacthub.io/image/61f54ab4-0335-40d4-8c56-199a09aafa77",
+      "from": "artifacthub.io/packages/helm/nicklasfrahm-argocd/argocd"
+    },
+    "cilium": {
+      "url": "https://artifacthub.io/image/2ae85972-bf12-41a5-afb2-9b1147b2aa56",
+      "from": "artifacthub.io/packages/helm/cilium/cilium"
+    },
+    "loki": {
+      "url": "https://artifacthub.io/image/6e0c6a8b-99fe-4ed5-a2ff-7799ba373223",
+      "from": "artifacthub.io/packages/helm/grafana-community/loki"
+    },
+    "metallb": {
+      "url": "https://artifacthub.io/image/68f1b3c9-94da-43f0-89df-a759a8cff818",
+      "from": "artifacthub.io/packages/helm/metallb/metallb"
+    },
+    "nvidia-device-plugin": {
+      "url": "https://artifacthub.io/image/cce37237-c1ee-404c-bc52-07262ed73d9c",
+      "from": "artifacthub.io/packages/helm/alekc/nvidia-device-plugin"
+    },
+    "promtail": {
+      "url": "https://artifacthub.io/image/c3c27bcf-e74a-416f-85bb-111ccf93966e",
+      "from": "artifacthub.io/packages/helm/kube-ops/promtail"
+    },
+    "sealed-secrets": {
+      "url": "https://artifacthub.io/image/ac4848cf-4c78-4511-945d-06a1aa0ccf5a",
+      "from": "artifacthub.io/packages/helm/bitnami/sealed-secrets"
     }
   }
 }
