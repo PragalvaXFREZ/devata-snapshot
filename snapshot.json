@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.3.0",
-  "generatedAt": "2026-07-10T22:00:02Z",
+  "generatedAt": "2026-07-10T23:00:34Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.3.0",
@@ -27,7 +27,7 @@
   },
   "totals": {
     "nodes": 4,
-    "nodesReady": 4,
+    "nodesReady": 3,
     "vcpu": 24,
     "memoryGiB": 16.1,
     "namespaces": 18,
@@ -62,7 +62,7 @@
     {
       "id": "worker-3",
       "role": "worker",
-      "status": "Ready",
+      "status": "NotReady",
       "vcpu": 16,
       "memoryGiB": 7.1,
       "ageDays": 22
@@ -72,12 +72,12 @@
     {
       "name": "hubble-ui",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     },
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     }
   ],
   "storage": {
@@ -96,13 +96,13 @@
     {
       "name": "argocd",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
       "name": "cilium",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -113,13 +113,13 @@
     {
       "name": "hello",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "workload"
     },
     {
       "name": "kps",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -143,13 +143,13 @@
     {
       "name": "promtail",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
       "name": "sealed-secrets",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
