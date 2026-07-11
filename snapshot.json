@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.3.0",
-  "generatedAt": "2026-07-11T08:00:02Z",
+  "generatedAt": "2026-07-11T09:05:54Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.3.0",
@@ -27,7 +27,7 @@
   },
   "totals": {
     "nodes": 4,
-    "nodesReady": 4,
+    "nodesReady": 3,
     "vcpu": 24,
     "memoryGiB": 16.1,
     "namespaces": 18,
@@ -62,22 +62,22 @@
     {
       "id": "worker-3",
       "role": "worker",
-      "status": "Ready",
+      "status": "NotReady",
       "vcpu": 16,
       "memoryGiB": 7.1,
-      "ageDays": 22
+      "ageDays": 23
     }
   ],
   "services": [
     {
       "name": "hubble-ui",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     },
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     }
   ],
   "storage": {
@@ -96,13 +96,13 @@
     {
       "name": "argocd",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
       "name": "cilium",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -119,7 +119,7 @@
     {
       "name": "kps",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -163,7 +163,7 @@
     "deployments": 22,
     "daemonsets": 7,
     "statefulsets": 3,
-    "pods": 60
+    "pods": 59
   },
   "logos": {
     "Argo CD app-of-apps": {
