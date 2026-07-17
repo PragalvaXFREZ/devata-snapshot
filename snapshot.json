@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.3.0",
-  "generatedAt": "2026-07-17T12:00:02Z",
+  "generatedAt": "2026-07-17T13:00:05Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.3.0",
@@ -167,7 +167,7 @@
     "deployments": 29,
     "daemonsets": 10,
     "statefulsets": 3,
-    "pods": 80
+    "pods": 73
   },
   "logos": {
     "Argo CD app-of-apps": {
