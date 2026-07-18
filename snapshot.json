@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.3.0",
-  "generatedAt": "2026-07-18T11:00:06Z",
+  "generatedAt": "2026-07-18T12:00:05Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.3.0",
@@ -147,7 +147,7 @@
     {
       "name": "promtail",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -173,7 +173,7 @@
     "deployments": 29,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 80
+    "pods": 75
   },
   "logos": {
     "Argo CD app-of-apps": {
