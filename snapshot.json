@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.3.0",
-  "generatedAt": "2026-07-18T10:00:26Z",
+  "generatedAt": "2026-07-18T11:00:06Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.3.0",
@@ -147,7 +147,7 @@
     {
       "name": "promtail",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
