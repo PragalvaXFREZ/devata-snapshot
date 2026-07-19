@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.3.0",
-  "generatedAt": "2026-07-19T13:02:38Z",
+  "generatedAt": "2026-07-19T14:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.3.0",
@@ -27,7 +27,7 @@
   },
   "totals": {
     "nodes": 3,
-    "nodesReady": 2,
+    "nodesReady": 3,
     "vcpu": 24,
     "memoryGiB": 18,
     "namespaces": 20,
@@ -46,7 +46,7 @@
     {
       "id": "worker-1",
       "role": "worker",
-      "status": "NotReady",
+      "status": "Ready",
       "vcpu": 16,
       "memoryGiB": 7.1,
       "ageDays": 31
@@ -64,12 +64,12 @@
     {
       "name": "hubble-ui",
       "exposure": "lan-only",
-      "status": "unknown"
+      "status": "up"
     },
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "unknown"
+      "status": "up"
     }
   ],
   "storage": {
@@ -94,7 +94,7 @@
     {
       "name": "cilium",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -111,7 +111,7 @@
     {
       "name": "kps",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -123,7 +123,7 @@
     {
       "name": "loki",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -147,7 +147,7 @@
     {
       "name": "promtail",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -173,7 +173,7 @@
     "deployments": 29,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 83
+    "pods": 82
   },
   "logos": {
     "Argo CD app-of-apps": {
