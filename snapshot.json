@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.4.0",
-  "generatedAt": "2026-07-28T14:00:03Z",
+  "generatedAt": "2026-07-28T15:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.4.0",
@@ -30,7 +30,7 @@
     "nodesReady": 3,
     "vcpu": 24,
     "memoryGiB": 18,
-    "namespaces": 21,
+    "namespaces": 22,
     "exposedServices": 2,
     "persistentVolumeClaims": 6
   },
@@ -41,7 +41,7 @@
       "status": "Ready",
       "vcpu": 4,
       "memoryGiB": 3.3,
-      "ageDays": 235
+      "ageDays": 236
     },
     {
       "id": "worker-1",
@@ -99,6 +99,12 @@
     },
     {
       "name": "cilium",
+      "synced": true,
+      "healthy": true,
+      "tier": "platform"
+    },
+    {
+      "name": "cloudflare-tunnel",
       "synced": true,
       "healthy": true,
       "tier": "platform"
@@ -188,36 +194,16 @@
     }
   ],
   "workloads": {
-    "deployments": 32,
+    "deployments": 33,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 81
+    "pods": 83
   },
   "traffic": {
     "source": "hubble",
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-07-28T08:00:03Z",
-        "flowsPerSecond": 146.8,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-07-28T08:15:03Z",
-        "flowsPerSecond": 146.414,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-07-28T08:30:03Z",
-        "flowsPerSecond": 146.466,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-07-28T08:45:03Z",
-        "flowsPerSecond": 146.469,
-        "dropsPerSecond": 0.014
-      },
       {
         "timestamp": "2026-07-28T09:00:03Z",
         "flowsPerSecond": 146.659,
@@ -322,6 +308,26 @@
         "timestamp": "2026-07-28T14:00:03Z",
         "flowsPerSecond": 147.69,
         "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-07-28T14:15:03Z",
+        "flowsPerSecond": 164.293,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-07-28T14:30:03Z",
+        "flowsPerSecond": 169.493,
+        "dropsPerSecond": 0.117
+      },
+      {
+        "timestamp": "2026-07-28T14:45:03Z",
+        "flowsPerSecond": 166.152,
+        "dropsPerSecond": 0.066
+      },
+      {
+        "timestamp": "2026-07-28T15:00:03Z",
+        "flowsPerSecond": 165.803,
+        "dropsPerSecond": 0.01
       }
     ]
   },
@@ -357,6 +363,10 @@
     "cilium": {
       "url": "https://artifacthub.io/image/2ae85972-bf12-41a5-afb2-9b1147b2aa56",
       "from": "artifacthub.io/packages/helm/cilium/cilium"
+    },
+    "cloudflare-tunnel": {
+      "url": "https://artifacthub.io/image/722cae13-1956-400d-9018-9ca0c3cf5e95",
+      "from": "artifacthub.io/packages/helm/cloudflare-tunnel/cloudflare-tunnel"
     },
     "gateway-api-crds": {
       "url": "https://artifacthub.io/image/d5fcd9d0-9175-4eb2-bc4e-dac569ee757b",
