@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.4.0",
-  "generatedAt": "2026-07-28T16:00:02Z",
+  "generatedAt": "2026-07-28T17:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.4.0",
@@ -57,7 +57,7 @@
       "status": "Ready",
       "vcpu": 4,
       "memoryGiB": 7.6,
-      "ageDays": 11
+      "ageDays": 12
     }
   ],
   "services": [
@@ -87,7 +87,7 @@
   "apps": [
     {
       "name": "argocd",
-      "synced": false,
+      "synced": true,
       "healthy": true,
       "tier": "platform"
     },
@@ -158,7 +158,7 @@
     },
     {
       "name": "metallb",
-      "synced": false,
+      "synced": true,
       "healthy": true,
       "tier": "platform"
     },
@@ -204,26 +204,6 @@
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-07-28T10:00:02Z",
-        "flowsPerSecond": 147.045,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-07-28T10:15:02Z",
-        "flowsPerSecond": 146.786,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-07-28T10:30:02Z",
-        "flowsPerSecond": 146.3,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-07-28T10:45:02Z",
-        "flowsPerSecond": 146.034,
-        "dropsPerSecond": 0.021
-      },
       {
         "timestamp": "2026-07-28T11:00:02Z",
         "flowsPerSecond": 147.369,
@@ -328,6 +308,26 @@
         "timestamp": "2026-07-28T16:00:02Z",
         "flowsPerSecond": 165.655,
         "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-07-28T16:15:02Z",
+        "flowsPerSecond": 167.214,
+        "dropsPerSecond": 0.034
+      },
+      {
+        "timestamp": "2026-07-28T16:30:02Z",
+        "flowsPerSecond": 165.355,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-07-28T16:45:02Z",
+        "flowsPerSecond": 170.352,
+        "dropsPerSecond": 0.034
+      },
+      {
+        "timestamp": "2026-07-28T17:00:02Z",
+        "flowsPerSecond": 164.628,
+        "dropsPerSecond": 0.021
       }
     ]
   },
