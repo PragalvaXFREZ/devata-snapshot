@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.4.0",
-  "generatedAt": "2026-08-09T22:00:02Z",
+  "generatedAt": "2026-08-10T00:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.4.0",
@@ -211,46 +211,6 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-08-09T16:00:02Z",
-        "flowsPerSecond": 168.645,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-08-09T16:15:02Z",
-        "flowsPerSecond": 170.141,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-08-09T16:30:02Z",
-        "flowsPerSecond": 168.717,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-08-09T16:45:02Z",
-        "flowsPerSecond": 169.7,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-08-09T17:00:02Z",
-        "flowsPerSecond": 170.89,
-        "dropsPerSecond": 0.048
-      },
-      {
-        "timestamp": "2026-08-09T17:15:02Z",
-        "flowsPerSecond": 169.555,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-08-09T17:30:02Z",
-        "flowsPerSecond": 167.762,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-08-09T17:45:02Z",
-        "flowsPerSecond": 170.579,
-        "dropsPerSecond": 0.014
-      },
-      {
         "timestamp": "2026-08-09T18:00:02Z",
         "flowsPerSecond": 168.638,
         "dropsPerSecond": 0.028
@@ -334,6 +294,41 @@
         "timestamp": "2026-08-09T22:00:02Z",
         "flowsPerSecond": 169.107,
         "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-08-09T22:15:02Z",
+        "flowsPerSecond": 169.997,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-08-09T22:30:02Z",
+        "flowsPerSecond": 168.386,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-08-09T22:45:02Z",
+        "flowsPerSecond": 169.524,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-08-09T23:00:02Z",
+        "flowsPerSecond": 157.593,
+        "dropsPerSecond": 0.031
+      },
+      {
+        "timestamp": "2026-08-09T23:30:02Z",
+        "flowsPerSecond": 103.699,
+        "dropsPerSecond": 0.187
+      },
+      {
+        "timestamp": "2026-08-09T23:45:02Z",
+        "flowsPerSecond": 168.517,
+        "dropsPerSecond": 0.041
+      },
+      {
+        "timestamp": "2026-08-10T00:00:02Z",
+        "flowsPerSecond": 168.2,
+        "dropsPerSecond": 0.041
       }
     ]
   },
