@@ -1,9 +1,9 @@
 {
-  "schemaVersion": "1.4.0",
-  "generatedAt": "2026-08-13T16:00:02Z",
+  "schemaVersion": "1.5.0",
+  "generatedAt": "2026-08-13T17:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "method": "read-only Kubernetes API via a scoped ServiceAccount"
   },
   "freshness": {
@@ -21,6 +21,7 @@
     },
     "loadBalancer": "MetalLB (L2)",
     "gitops": "Argo CD app-of-apps",
+    "remoteAccess": "NetBird",
     "ingress": "none yet; Gateway API planned",
     "secretsManagement": "Sealed Secrets",
     "publicExposure": "none; behind CGNAT, outbound-only"
@@ -57,7 +58,7 @@
       "status": "Ready",
       "vcpu": 4,
       "memoryGiB": 7.6,
-      "ageDays": 27
+      "ageDays": 28
     }
   ],
   "services": [
@@ -211,129 +212,129 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-08-13T10:00:02Z",
-        "flowsPerSecond": 168.262,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-08-13T10:15:02Z",
-        "flowsPerSecond": 169.555,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-08-13T10:30:02Z",
-        "flowsPerSecond": 58.01,
-        "dropsPerSecond": 0.011
-      },
-      {
-        "timestamp": "2026-08-13T10:45:02Z",
-        "flowsPerSecond": 182.297,
-        "dropsPerSecond": 0.164
-      },
-      {
-        "timestamp": "2026-08-13T11:00:02Z",
+        "timestamp": "2026-08-13T11:00:03Z",
         "flowsPerSecond": 171.962,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-08-13T11:15:02Z",
+        "timestamp": "2026-08-13T11:15:03Z",
         "flowsPerSecond": 173.3,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-08-13T11:30:02Z",
+        "timestamp": "2026-08-13T11:30:03Z",
         "flowsPerSecond": 172.503,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-08-13T11:45:02Z",
-        "flowsPerSecond": 174.286,
+        "timestamp": "2026-08-13T11:45:03Z",
+        "flowsPerSecond": 174.305,
         "dropsPerSecond": 0.042
       },
       {
-        "timestamp": "2026-08-13T12:00:02Z",
+        "timestamp": "2026-08-13T12:00:03Z",
         "flowsPerSecond": 172.241,
         "dropsPerSecond": 0.024
       },
       {
-        "timestamp": "2026-08-13T12:15:02Z",
+        "timestamp": "2026-08-13T12:15:03Z",
         "flowsPerSecond": 175.034,
         "dropsPerSecond": 0.155
       },
       {
-        "timestamp": "2026-08-13T12:30:02Z",
+        "timestamp": "2026-08-13T12:30:03Z",
         "flowsPerSecond": 175.21,
         "dropsPerSecond": 0
       },
       {
-        "timestamp": "2026-08-13T12:45:02Z",
+        "timestamp": "2026-08-13T12:45:03Z",
         "flowsPerSecond": 174.541,
         "dropsPerSecond": 0.066
       },
       {
-        "timestamp": "2026-08-13T13:00:02Z",
+        "timestamp": "2026-08-13T13:00:03Z",
         "flowsPerSecond": 175.976,
         "dropsPerSecond": 0.01
       },
       {
-        "timestamp": "2026-08-13T13:15:02Z",
+        "timestamp": "2026-08-13T13:15:03Z",
         "flowsPerSecond": 174.803,
         "dropsPerSecond": 0.038
       },
       {
-        "timestamp": "2026-08-13T13:30:02Z",
+        "timestamp": "2026-08-13T13:30:03Z",
         "flowsPerSecond": 177.921,
         "dropsPerSecond": 0.048
       },
       {
-        "timestamp": "2026-08-13T13:45:02Z",
+        "timestamp": "2026-08-13T13:45:03Z",
         "flowsPerSecond": 175.459,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-08-13T14:00:02Z",
+        "timestamp": "2026-08-13T14:00:03Z",
         "flowsPerSecond": 174.234,
         "dropsPerSecond": 0.007
       },
       {
-        "timestamp": "2026-08-13T14:15:02Z",
+        "timestamp": "2026-08-13T14:15:03Z",
         "flowsPerSecond": 174.638,
         "dropsPerSecond": 0.031
       },
       {
-        "timestamp": "2026-08-13T14:30:02Z",
+        "timestamp": "2026-08-13T14:30:03Z",
         "flowsPerSecond": 174.91,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-08-13T14:45:02Z",
+        "timestamp": "2026-08-13T14:45:03Z",
         "flowsPerSecond": 173.786,
         "dropsPerSecond": 0.014
       },
       {
-        "timestamp": "2026-08-13T15:00:02Z",
+        "timestamp": "2026-08-13T15:00:03Z",
         "flowsPerSecond": 176.01,
         "dropsPerSecond": 0.007
       },
       {
-        "timestamp": "2026-08-13T15:15:02Z",
+        "timestamp": "2026-08-13T15:15:03Z",
         "flowsPerSecond": 174.903,
         "dropsPerSecond": 0.024
       },
       {
-        "timestamp": "2026-08-13T15:30:02Z",
+        "timestamp": "2026-08-13T15:30:03Z",
         "flowsPerSecond": 175.407,
         "dropsPerSecond": 0.034
       },
       {
-        "timestamp": "2026-08-13T15:45:02Z",
+        "timestamp": "2026-08-13T15:45:03Z",
         "flowsPerSecond": 173.834,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-08-13T16:00:02Z",
+        "timestamp": "2026-08-13T16:00:03Z",
         "flowsPerSecond": 175.124,
         "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-08-13T16:15:03Z",
+        "flowsPerSecond": 175.162,
+        "dropsPerSecond": 0.031
+      },
+      {
+        "timestamp": "2026-08-13T16:30:03Z",
+        "flowsPerSecond": 175.779,
+        "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-08-13T16:45:03Z",
+        "flowsPerSecond": 177.683,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-08-13T17:00:03Z",
+        "flowsPerSecond": 176.159,
+        "dropsPerSecond": 0.017
       }
     ]
   },
@@ -353,6 +354,10 @@
     "MetalLB (L2)": {
       "url": "https://artifacthub.io/image/68f1b3c9-94da-43f0-89df-a759a8cff818",
       "from": "artifacthub.io/packages/helm/metallb/metallb"
+    },
+    "NetBird": {
+      "url": "https://artifacthub.io/image/0b9dabf5-2790-4e47-9380-e74e5ef2f85d",
+      "from": "artifacthub.io/packages/helm/jaconi/netbird"
     },
     "Sealed Secrets": {
       "url": "https://artifacthub.io/image/ac4848cf-4c78-4511-945d-06a1aa0ccf5a",
