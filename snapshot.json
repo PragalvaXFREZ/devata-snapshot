@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.4.0",
-  "generatedAt": "2026-08-13T11:00:03Z",
+  "generatedAt": "2026-08-13T12:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.4.0",
@@ -13,7 +13,7 @@
   "cluster": {
     "name": "devata",
     "distribution": "Talos Linux",
-    "osVersion": "v1.11.5",
+    "osVersion": "v1.12.11",
     "kubernetesVersion": "v1.34.1",
     "cni": {
       "name": "Cilium",
@@ -203,33 +203,13 @@
     "deployments": 34,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 80
+    "pods": 81
   },
   "traffic": {
     "source": "hubble",
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-08-13T05:00:03Z",
-        "flowsPerSecond": 167.869,
-        "dropsPerSecond": 0.031
-      },
-      {
-        "timestamp": "2026-08-13T05:15:03Z",
-        "flowsPerSecond": 171.128,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-08-13T05:30:03Z",
-        "flowsPerSecond": 169.693,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-08-13T05:45:03Z",
-        "flowsPerSecond": 170.307,
-        "dropsPerSecond": 0.014
-      },
       {
         "timestamp": "2026-08-13T06:00:03Z",
         "flowsPerSecond": 171.2,
@@ -334,6 +314,26 @@
         "timestamp": "2026-08-13T11:00:03Z",
         "flowsPerSecond": 171.962,
         "dropsPerSecond": 0.028
+      },
+      {
+        "timestamp": "2026-08-13T11:15:03Z",
+        "flowsPerSecond": 173.3,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-08-13T11:30:03Z",
+        "flowsPerSecond": 172.503,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-08-13T11:45:03Z",
+        "flowsPerSecond": 174.305,
+        "dropsPerSecond": 0.042
+      },
+      {
+        "timestamp": "2026-08-13T12:00:03Z",
+        "flowsPerSecond": 172.241,
+        "dropsPerSecond": 0.024
       }
     ]
   },
