@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-09-01T09:00:02Z",
+  "generatedAt": "2026-09-01T10:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -204,7 +204,7 @@
     "deployments": 34,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 86
+    "pods": 88
   },
   "traffic": {
     "source": "hubble",
@@ -212,34 +212,54 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-09-01T07:45:02Z",
-        "flowsPerSecond": 106.272,
-        "dropsPerSecond": 0.605
+        "timestamp": "2026-09-01T07:45:03Z",
+        "flowsPerSecond": 106.642,
+        "dropsPerSecond": 0.607
       },
       {
-        "timestamp": "2026-09-01T08:00:02Z",
+        "timestamp": "2026-09-01T08:00:03Z",
         "flowsPerSecond": 101.514,
         "dropsPerSecond": 0.072
       },
       {
-        "timestamp": "2026-09-01T08:15:02Z",
+        "timestamp": "2026-09-01T08:15:03Z",
         "flowsPerSecond": 101.407,
         "dropsPerSecond": 0.086
       },
       {
-        "timestamp": "2026-09-01T08:30:02Z",
+        "timestamp": "2026-09-01T08:30:03Z",
         "flowsPerSecond": 101.445,
         "dropsPerSecond": 0.003
       },
       {
-        "timestamp": "2026-09-01T08:45:02Z",
+        "timestamp": "2026-09-01T08:45:03Z",
         "flowsPerSecond": 101.814,
         "dropsPerSecond": 0.059
       },
       {
-        "timestamp": "2026-09-01T09:00:02Z",
+        "timestamp": "2026-09-01T09:00:03Z",
         "flowsPerSecond": 100.948,
         "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-09-01T09:15:03Z",
+        "flowsPerSecond": 100.817,
+        "dropsPerSecond": 0
+      },
+      {
+        "timestamp": "2026-09-01T09:30:03Z",
+        "flowsPerSecond": 101.493,
+        "dropsPerSecond": 0.003
+      },
+      {
+        "timestamp": "2026-09-01T09:45:03Z",
+        "flowsPerSecond": 100.593,
+        "dropsPerSecond": 0.038
+      },
+      {
+        "timestamp": "2026-09-01T10:00:03Z",
+        "flowsPerSecond": 100.359,
+        "dropsPerSecond": 0.017
       }
     ]
   },
