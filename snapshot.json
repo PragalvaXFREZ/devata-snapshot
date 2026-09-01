@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-08-24T09:00:03Z",
+  "generatedAt": "2026-09-01T08:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -28,7 +28,7 @@
   },
   "totals": {
     "nodes": 3,
-    "nodesReady": 3,
+    "nodesReady": 2,
     "vcpu": 24,
     "memoryGiB": 17.9,
     "namespaces": 22,
@@ -42,15 +42,15 @@
       "status": "Ready",
       "vcpu": 4,
       "memoryGiB": 3.3,
-      "ageDays": 262
+      "ageDays": 270
     },
     {
       "id": "worker-1",
       "role": "worker",
-      "status": "Ready",
+      "status": "NotReady",
       "vcpu": 16,
       "memoryGiB": 7.1,
-      "ageDays": 67
+      "ageDays": 74
     },
     {
       "id": "worker-2",
@@ -58,19 +58,19 @@
       "status": "Ready",
       "vcpu": 4,
       "memoryGiB": 7.6,
-      "ageDays": 38
+      "ageDays": 46
     }
   ],
   "services": [
     {
       "name": "hubble-ui",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     },
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     }
   ],
   "storage": {
@@ -101,13 +101,13 @@
     {
       "name": "cilium",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
       "name": "cloudflare-tunnel",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -136,7 +136,7 @@
     {
       "name": "kps",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -178,7 +178,7 @@
     {
       "name": "promtail",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -204,7 +204,7 @@
     "deployments": 34,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 88
+    "pods": 84
   },
   "traffic": {
     "source": "hubble",
@@ -212,89 +212,14 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-08-24T03:00:03Z",
-        "flowsPerSecond": 166.034,
-        "dropsPerSecond": 0.024
+        "timestamp": "2026-09-01T07:45:03Z",
+        "flowsPerSecond": 106.642,
+        "dropsPerSecond": 0.607
       },
       {
-        "timestamp": "2026-08-24T03:15:03Z",
-        "flowsPerSecond": 166.166,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-08-24T03:30:03Z",
-        "flowsPerSecond": 167.207,
-        "dropsPerSecond": 0.031
-      },
-      {
-        "timestamp": "2026-08-24T03:45:03Z",
-        "flowsPerSecond": 166.855,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-08-24T04:00:03Z",
-        "flowsPerSecond": 165.417,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-08-24T04:15:03Z",
-        "flowsPerSecond": 166.714,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-08-24T04:30:03Z",
-        "flowsPerSecond": 165.372,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-08-24T04:45:03Z",
-        "flowsPerSecond": 166.866,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-08-24T05:00:03Z",
-        "flowsPerSecond": 165.138,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-08-24T05:15:03Z",
-        "flowsPerSecond": 166.786,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-08-24T05:30:03Z",
-        "flowsPerSecond": 164.066,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-08-24T05:45:03Z",
-        "flowsPerSecond": 167.024,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-08-24T06:00:03Z",
-        "flowsPerSecond": 165.038,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-08-24T06:15:03Z",
-        "flowsPerSecond": 167.097,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-08-24T06:30:03Z",
-        "flowsPerSecond": 13.179,
-        "dropsPerSecond": 0.015
-      },
-      {
-        "timestamp": "2026-08-24T08:45:03Z",
-        "flowsPerSecond": 164.687,
-        "dropsPerSecond": 0.481
-      },
-      {
-        "timestamp": "2026-08-24T09:00:03Z",
-        "flowsPerSecond": 178.676,
-        "dropsPerSecond": 0.148
+        "timestamp": "2026-09-01T08:00:03Z",
+        "flowsPerSecond": 101.514,
+        "dropsPerSecond": 0.072
       }
     ]
   },
