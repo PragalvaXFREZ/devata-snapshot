@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-09-06T09:00:02Z",
+  "generatedAt": "2026-09-06T10:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -31,9 +31,9 @@
     "nodesReady": 3,
     "vcpu": 24,
     "memoryGiB": 18,
-    "namespaces": 22,
+    "namespaces": 23,
     "exposedServices": 2,
-    "persistentVolumeClaims": 6
+    "persistentVolumeClaims": 7
   },
   "nodes": [
     {
@@ -76,8 +76,8 @@
   "storage": {
     "defaultClass": "local-path",
     "replicated": false,
-    "claims": 6,
-    "totalGiB": 24
+    "claims": 7,
+    "totalGiB": 25
   },
   "gpu": {
     "present": true,
@@ -194,6 +194,12 @@
       "tier": "workload"
     },
     {
+      "name": "uptime-kuma",
+      "synced": true,
+      "healthy": true,
+      "tier": "workload"
+    },
+    {
       "name": "velero",
       "synced": true,
       "healthy": true,
@@ -201,10 +207,10 @@
     }
   ],
   "workloads": {
-    "deployments": 34,
+    "deployments": 35,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 84
+    "pods": 85
   },
   "traffic": {
     "source": "hubble",
@@ -212,129 +218,129 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-09-06T03:00:02Z",
-        "flowsPerSecond": 169.917,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-09-06T03:15:02Z",
-        "flowsPerSecond": 168.91,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-09-06T03:30:02Z",
-        "flowsPerSecond": 169.976,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-09-06T03:45:02Z",
-        "flowsPerSecond": 170.062,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-09-06T04:00:02Z",
+        "timestamp": "2026-09-06T04:00:03Z",
         "flowsPerSecond": 169.776,
         "dropsPerSecond": 0.024
       },
       {
-        "timestamp": "2026-09-06T04:15:02Z",
+        "timestamp": "2026-09-06T04:15:03Z",
         "flowsPerSecond": 169.034,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-06T04:30:02Z",
+        "timestamp": "2026-09-06T04:30:03Z",
         "flowsPerSecond": 170.676,
         "dropsPerSecond": 0.003
       },
       {
-        "timestamp": "2026-09-06T04:45:02Z",
+        "timestamp": "2026-09-06T04:45:03Z",
         "flowsPerSecond": 169.759,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-06T05:00:02Z",
+        "timestamp": "2026-09-06T05:00:03Z",
         "flowsPerSecond": 170.176,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-06T05:15:02Z",
+        "timestamp": "2026-09-06T05:15:03Z",
         "flowsPerSecond": 169.097,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-09-06T05:30:02Z",
+        "timestamp": "2026-09-06T05:30:03Z",
         "flowsPerSecond": 170.297,
         "dropsPerSecond": 0.003
       },
       {
-        "timestamp": "2026-09-06T05:45:02Z",
+        "timestamp": "2026-09-06T05:45:03Z",
         "flowsPerSecond": 169.055,
         "dropsPerSecond": 0.014
       },
       {
-        "timestamp": "2026-09-06T06:00:02Z",
+        "timestamp": "2026-09-06T06:00:03Z",
         "flowsPerSecond": 169.979,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-09-06T06:15:02Z",
+        "timestamp": "2026-09-06T06:15:03Z",
         "flowsPerSecond": 168.334,
         "dropsPerSecond": 0.031
       },
       {
-        "timestamp": "2026-09-06T06:30:02Z",
+        "timestamp": "2026-09-06T06:30:03Z",
         "flowsPerSecond": 169.945,
         "dropsPerSecond": 0.007
       },
       {
-        "timestamp": "2026-09-06T06:45:02Z",
+        "timestamp": "2026-09-06T06:45:03Z",
         "flowsPerSecond": 167.952,
         "dropsPerSecond": 0.014
       },
       {
-        "timestamp": "2026-09-06T07:00:02Z",
+        "timestamp": "2026-09-06T07:00:03Z",
         "flowsPerSecond": 171.338,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-06T07:15:02Z",
+        "timestamp": "2026-09-06T07:15:03Z",
         "flowsPerSecond": 175.772,
         "dropsPerSecond": 0.131
       },
       {
-        "timestamp": "2026-09-06T07:30:02Z",
+        "timestamp": "2026-09-06T07:30:03Z",
         "flowsPerSecond": 169.652,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-09-06T07:45:02Z",
+        "timestamp": "2026-09-06T07:45:03Z",
         "flowsPerSecond": 168.497,
         "dropsPerSecond": 0.024
       },
       {
-        "timestamp": "2026-09-06T08:00:02Z",
+        "timestamp": "2026-09-06T08:00:03Z",
         "flowsPerSecond": 169.882,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-09-06T08:15:02Z",
+        "timestamp": "2026-09-06T08:15:03Z",
         "flowsPerSecond": 169.121,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-09-06T08:30:02Z",
+        "timestamp": "2026-09-06T08:30:03Z",
         "flowsPerSecond": 170.114,
         "dropsPerSecond": 0.003
       },
       {
-        "timestamp": "2026-09-06T08:45:02Z",
+        "timestamp": "2026-09-06T08:45:03Z",
         "flowsPerSecond": 168.6,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-09-06T09:00:02Z",
+        "timestamp": "2026-09-06T09:00:03Z",
         "flowsPerSecond": 170.434,
         "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-09-06T09:15:03Z",
+        "flowsPerSecond": 168.417,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-06T09:30:03Z",
+        "flowsPerSecond": 170.29,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-09-06T09:45:03Z",
+        "flowsPerSecond": 189.379,
+        "dropsPerSecond": 0.062
+      },
+      {
+        "timestamp": "2026-09-06T10:00:03Z",
+        "flowsPerSecond": 195.383,
+        "dropsPerSecond": 0.028
       }
     ]
   },
@@ -406,6 +412,10 @@
     "sealed-secrets": {
       "url": "https://artifacthub.io/image/ac4848cf-4c78-4511-945d-06a1aa0ccf5a",
       "from": "artifacthub.io/packages/helm/bitnami/sealed-secrets"
+    },
+    "uptime-kuma": {
+      "url": "https://artifacthub.io/image/0ae6a59e-984e-455c-90b2-b1bc98b0e99a",
+      "from": "artifacthub.io/packages/helm/uptime-kuma/uptime-kuma"
     },
     "velero": {
       "url": "https://artifacthub.io/image/c982dc8d-8cf8-4f7c-9ba5-20c72a12cb84",
