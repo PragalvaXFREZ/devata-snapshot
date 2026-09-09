@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-09-09T21:00:02Z",
+  "generatedAt": "2026-09-09T22:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -218,129 +218,129 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-09-09T15:00:02Z",
-        "flowsPerSecond": 193.465,
-        "dropsPerSecond": 0.048
-      },
-      {
-        "timestamp": "2026-09-09T15:15:02Z",
-        "flowsPerSecond": 187.938,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-09-09T15:30:02Z",
-        "flowsPerSecond": 189.814,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-09-09T15:45:02Z",
-        "flowsPerSecond": 188.083,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-09-09T16:00:02Z",
+        "timestamp": "2026-09-09T16:00:03Z",
         "flowsPerSecond": 189.831,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-09-09T16:15:02Z",
+        "timestamp": "2026-09-09T16:15:03Z",
         "flowsPerSecond": 188.655,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-09-09T16:30:02Z",
+        "timestamp": "2026-09-09T16:30:03Z",
         "flowsPerSecond": 189.445,
         "dropsPerSecond": 0.01
       },
       {
-        "timestamp": "2026-09-09T16:45:02Z",
+        "timestamp": "2026-09-09T16:45:03Z",
         "flowsPerSecond": 187.821,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-09T17:00:02Z",
+        "timestamp": "2026-09-09T17:00:03Z",
         "flowsPerSecond": 189.341,
         "dropsPerSecond": 0.024
       },
       {
-        "timestamp": "2026-09-09T17:15:02Z",
+        "timestamp": "2026-09-09T17:15:03Z",
         "flowsPerSecond": 187.697,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-09T17:30:02Z",
+        "timestamp": "2026-09-09T17:30:03Z",
         "flowsPerSecond": 189.714,
         "dropsPerSecond": 0.01
       },
       {
-        "timestamp": "2026-09-09T17:45:02Z",
+        "timestamp": "2026-09-09T17:45:03Z",
         "flowsPerSecond": 188.628,
         "dropsPerSecond": 0.01
       },
       {
-        "timestamp": "2026-09-09T18:00:02Z",
+        "timestamp": "2026-09-09T18:00:03Z",
         "flowsPerSecond": 189.472,
         "dropsPerSecond": 0.024
       },
       {
-        "timestamp": "2026-09-09T18:15:02Z",
+        "timestamp": "2026-09-09T18:15:03Z",
         "flowsPerSecond": 190.069,
         "dropsPerSecond": 0.041
       },
       {
-        "timestamp": "2026-09-09T18:30:02Z",
+        "timestamp": "2026-09-09T18:30:03Z",
         "flowsPerSecond": 188.772,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-09T18:45:02Z",
+        "timestamp": "2026-09-09T18:45:03Z",
         "flowsPerSecond": 187.972,
         "dropsPerSecond": 0.014
       },
       {
-        "timestamp": "2026-09-09T19:00:02Z",
+        "timestamp": "2026-09-09T19:00:03Z",
         "flowsPerSecond": 189.328,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-09-09T19:15:02Z",
+        "timestamp": "2026-09-09T19:15:03Z",
         "flowsPerSecond": 188.097,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-09T19:30:02Z",
+        "timestamp": "2026-09-09T19:30:03Z",
         "flowsPerSecond": 190.297,
         "dropsPerSecond": 0.028
       },
       {
-        "timestamp": "2026-09-09T19:45:02Z",
+        "timestamp": "2026-09-09T19:45:03Z",
         "flowsPerSecond": 189.152,
         "dropsPerSecond": 0.014
       },
       {
-        "timestamp": "2026-09-09T20:00:02Z",
+        "timestamp": "2026-09-09T20:00:03Z",
         "flowsPerSecond": 190,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-09-09T20:15:02Z",
+        "timestamp": "2026-09-09T20:15:03Z",
         "flowsPerSecond": 188.352,
         "dropsPerSecond": 0.014
       },
       {
-        "timestamp": "2026-09-09T20:30:02Z",
+        "timestamp": "2026-09-09T20:30:03Z",
         "flowsPerSecond": 189.579,
         "dropsPerSecond": 0.017
       },
       {
-        "timestamp": "2026-09-09T20:45:02Z",
+        "timestamp": "2026-09-09T20:45:03Z",
         "flowsPerSecond": 188.052,
         "dropsPerSecond": 0.021
       },
       {
-        "timestamp": "2026-09-09T21:00:02Z",
+        "timestamp": "2026-09-09T21:00:03Z",
         "flowsPerSecond": 189.445,
         "dropsPerSecond": 0.031
+      },
+      {
+        "timestamp": "2026-09-09T21:15:03Z",
+        "flowsPerSecond": 188.297,
+        "dropsPerSecond": 0.003
+      },
+      {
+        "timestamp": "2026-09-09T21:30:03Z",
+        "flowsPerSecond": 191.366,
+        "dropsPerSecond": 0.031
+      },
+      {
+        "timestamp": "2026-09-09T21:45:03Z",
+        "flowsPerSecond": 188.003,
+        "dropsPerSecond": 0
+      },
+      {
+        "timestamp": "2026-09-09T22:00:03Z",
+        "flowsPerSecond": 188.61,
+        "dropsPerSecond": 0.024
       }
     ]
   },
