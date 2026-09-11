@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-09-11T00:09:13Z",
+  "generatedAt": "2026-09-11T01:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -210,7 +210,139 @@
     "deployments": 35,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 87
+    "pods": 86
+  },
+  "traffic": {
+    "source": "hubble",
+    "windowHours": 6,
+    "sampleIntervalMinutes": 15,
+    "samples": [
+      {
+        "timestamp": "2026-09-10T19:00:02Z",
+        "flowsPerSecond": 199.621,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-10T19:15:02Z",
+        "flowsPerSecond": 201.421,
+        "dropsPerSecond": 0.034
+      },
+      {
+        "timestamp": "2026-09-10T19:30:02Z",
+        "flowsPerSecond": 198.493,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-09-10T19:45:02Z",
+        "flowsPerSecond": 198.393,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-09-10T20:00:02Z",
+        "flowsPerSecond": 199.966,
+        "dropsPerSecond": 0.003
+      },
+      {
+        "timestamp": "2026-09-10T20:15:02Z",
+        "flowsPerSecond": 199.755,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-09-10T20:30:02Z",
+        "flowsPerSecond": 199.355,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-09-10T20:45:02Z",
+        "flowsPerSecond": 198.931,
+        "dropsPerSecond": 0.028
+      },
+      {
+        "timestamp": "2026-09-10T21:00:02Z",
+        "flowsPerSecond": 200.686,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-09-10T21:15:02Z",
+        "flowsPerSecond": 198.807,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-10T21:30:02Z",
+        "flowsPerSecond": 199.555,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-10T21:45:02Z",
+        "flowsPerSecond": 199.466,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-09-10T22:00:02Z",
+        "flowsPerSecond": 199.303,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-09-10T22:15:02Z",
+        "flowsPerSecond": 199.538,
+        "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-09-10T22:30:02Z",
+        "flowsPerSecond": 202.166,
+        "dropsPerSecond": 0.031
+      },
+      {
+        "timestamp": "2026-09-10T22:45:02Z",
+        "flowsPerSecond": 199.3,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-09-10T23:00:02Z",
+        "flowsPerSecond": 200.4,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-10T23:15:02Z",
+        "flowsPerSecond": 199.679,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-10T23:30:02Z",
+        "flowsPerSecond": 200.872,
+        "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-09-10T23:45:02Z",
+        "flowsPerSecond": 200.424,
+        "dropsPerSecond": 0.028
+      },
+      {
+        "timestamp": "2026-09-11T00:00:02Z",
+        "flowsPerSecond": 161.643,
+        "dropsPerSecond": 0.011
+      },
+      {
+        "timestamp": "2026-09-11T00:15:02Z",
+        "flowsPerSecond": 153.792,
+        "dropsPerSecond": 0.279
+      },
+      {
+        "timestamp": "2026-09-11T00:30:02Z",
+        "flowsPerSecond": 199.948,
+        "dropsPerSecond": 0.117
+      },
+      {
+        "timestamp": "2026-09-11T00:45:02Z",
+        "flowsPerSecond": 198.648,
+        "dropsPerSecond": 0.069
+      },
+      {
+        "timestamp": "2026-09-11T01:00:02Z",
+        "flowsPerSecond": 199.662,
+        "dropsPerSecond": 0.007
+      }
+    ]
   },
   "logos": {
     "Argo CD app-of-apps": {
