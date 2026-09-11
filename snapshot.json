@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-09-11T08:02:38Z",
+  "generatedAt": "2026-09-11T09:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -50,7 +50,7 @@
       "status": "Ready",
       "vcpu": 16,
       "memoryGiB": 7.1,
-      "ageDays": 84
+      "ageDays": 85
     },
     {
       "id": "worker-2",
@@ -65,7 +65,7 @@
     {
       "name": "hubble-ui",
       "exposure": "lan-only",
-      "status": "unknown"
+      "status": "up"
     },
     {
       "name": "kps-grafana",
@@ -101,7 +101,7 @@
     {
       "name": "cilium",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -130,7 +130,7 @@
     {
       "name": "hubble-traffic-stream",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "workload"
     },
     {
@@ -160,7 +160,7 @@
     {
       "name": "longhorn",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -211,6 +211,113 @@
     "daemonsets": 11,
     "statefulsets": 3,
     "pods": 87
+  },
+  "traffic": {
+    "source": "hubble",
+    "windowHours": 6,
+    "sampleIntervalMinutes": 15,
+    "samples": [
+      {
+        "timestamp": "2026-09-11T03:00:03Z",
+        "flowsPerSecond": 200.183,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-11T03:15:03Z",
+        "flowsPerSecond": 199.659,
+        "dropsPerSecond": 0.034
+      },
+      {
+        "timestamp": "2026-09-11T03:30:03Z",
+        "flowsPerSecond": 200.024,
+        "dropsPerSecond": 0.066
+      },
+      {
+        "timestamp": "2026-09-11T03:45:03Z",
+        "flowsPerSecond": 199.531,
+        "dropsPerSecond": 0
+      },
+      {
+        "timestamp": "2026-09-11T04:00:03Z",
+        "flowsPerSecond": 199.245,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-09-11T04:15:03Z",
+        "flowsPerSecond": 198.966,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-09-11T04:30:03Z",
+        "flowsPerSecond": 199.479,
+        "dropsPerSecond": 0.038
+      },
+      {
+        "timestamp": "2026-09-11T04:45:03Z",
+        "flowsPerSecond": 199.521,
+        "dropsPerSecond": 0
+      },
+      {
+        "timestamp": "2026-09-11T05:00:03Z",
+        "flowsPerSecond": 199.94,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-09-11T05:15:03Z",
+        "flowsPerSecond": 199.721,
+        "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-09-11T05:30:03Z",
+        "flowsPerSecond": 199.993,
+        "dropsPerSecond": 0.038
+      },
+      {
+        "timestamp": "2026-09-11T05:45:03Z",
+        "flowsPerSecond": 198.776,
+        "dropsPerSecond": 0
+      },
+      {
+        "timestamp": "2026-09-11T06:00:03Z",
+        "flowsPerSecond": 201.893,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-09-11T06:15:03Z",
+        "flowsPerSecond": 199.855,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-09-11T06:30:03Z",
+        "flowsPerSecond": 199.493,
+        "dropsPerSecond": 0.048
+      },
+      {
+        "timestamp": "2026-09-11T06:45:03Z",
+        "flowsPerSecond": 199.1,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-09-11T08:15:03Z",
+        "flowsPerSecond": 199.728,
+        "dropsPerSecond": 0.1
+      },
+      {
+        "timestamp": "2026-09-11T08:30:03Z",
+        "flowsPerSecond": 198.579,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-11T08:45:03Z",
+        "flowsPerSecond": 200.114,
+        "dropsPerSecond": 0.048
+      },
+      {
+        "timestamp": "2026-09-11T09:00:03Z",
+        "flowsPerSecond": 197.741,
+        "dropsPerSecond": 0.007
+      }
+    ]
   },
   "logos": {
     "Argo CD app-of-apps": {
