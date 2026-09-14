@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-09-14T21:00:03Z",
+  "generatedAt": "2026-09-14T22:00:03Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -218,26 +218,6 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-09-14T15:00:03Z",
-        "flowsPerSecond": 199.779,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-09-14T15:15:03Z",
-        "flowsPerSecond": 198.248,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-09-14T15:30:03Z",
-        "flowsPerSecond": 199.276,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-09-14T15:45:03Z",
-        "flowsPerSecond": 198.948,
-        "dropsPerSecond": 0.01
-      },
-      {
         "timestamp": "2026-09-14T16:00:03Z",
         "flowsPerSecond": 200.251,
         "dropsPerSecond": 0.028
@@ -341,6 +321,26 @@
         "timestamp": "2026-09-14T21:00:03Z",
         "flowsPerSecond": 201.307,
         "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-09-14T21:15:03Z",
+        "flowsPerSecond": 200.483,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-09-14T21:30:03Z",
+        "flowsPerSecond": 200.317,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-09-14T21:45:03Z",
+        "flowsPerSecond": 200.248,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-09-14T22:00:03Z",
+        "flowsPerSecond": 200.014,
+        "dropsPerSecond": 0.024
       }
     ]
   },
@@ -386,7 +386,7 @@
       "from": "artifacthub.io/packages/helm/cloudflare-tunnel/cloudflare-tunnel"
     },
     "gateway-api-crds": {
-      "url": "https://artifacthub.io/image/c2ca4e14-fbaf-4127-bb10-f7479d73afbc",
+      "url": "https://artifacthub.io/image/a085b452-942c-475b-9b00-490c0f88835b",
       "from": "artifacthub.io/packages/helm/peterweissdk/gateway-api-crds"
     },
     "loki": {
