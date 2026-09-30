@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-09-30T06:05:01Z",
+  "generatedAt": "2026-09-30T07:00:05Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -65,12 +65,12 @@
     {
       "name": "hubble-ui",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     },
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     }
   ],
   "storage": {
@@ -101,13 +101,13 @@
     {
       "name": "cilium",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
       "name": "cloudflare-tunnel",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -136,7 +136,7 @@
     {
       "name": "kps",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -178,7 +178,7 @@
     {
       "name": "promtail",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -196,7 +196,7 @@
     {
       "name": "uptime-kuma",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -210,7 +210,34 @@
     "deployments": 35,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 85
+    "pods": 86
+  },
+  "traffic": {
+    "source": "hubble",
+    "windowHours": 6,
+    "sampleIntervalMinutes": 15,
+    "samples": [
+      {
+        "timestamp": "2026-09-30T06:15:05Z",
+        "flowsPerSecond": 100.679,
+        "dropsPerSecond": 0.186
+      },
+      {
+        "timestamp": "2026-09-30T06:30:05Z",
+        "flowsPerSecond": 103.421,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-09-30T06:45:05Z",
+        "flowsPerSecond": 101.497,
+        "dropsPerSecond": 0.055
+      },
+      {
+        "timestamp": "2026-09-30T07:00:05Z",
+        "flowsPerSecond": 103.586,
+        "dropsPerSecond": 0
+      }
+    ]
   },
   "logos": {
     "Argo CD app-of-apps": {
