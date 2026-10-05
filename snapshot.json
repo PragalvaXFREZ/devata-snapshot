@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-05T12:00:02Z",
+  "generatedAt": "2026-10-05T13:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -27,10 +27,10 @@
     "publicExposure": "none; behind CGNAT, outbound-only"
   },
   "totals": {
-    "nodes": 3,
-    "nodesReady": 3,
-    "vcpu": 24,
-    "memoryGiB": 18,
+    "nodes": 2,
+    "nodesReady": 2,
+    "vcpu": 20,
+    "memoryGiB": 14.7,
     "namespaces": 23,
     "exposedServices": 2,
     "persistentVolumeClaims": 7
@@ -51,14 +51,6 @@
       "vcpu": 16,
       "memoryGiB": 7.1,
       "ageDays": 109
-    },
-    {
-      "id": "worker-2",
-      "role": "worker",
-      "status": "Ready",
-      "vcpu": 4,
-      "memoryGiB": 3.3,
-      "ageDays": 0
     }
   ],
   "services": [
@@ -210,7 +202,7 @@
     "deployments": 35,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 112
+    "pods": 106
   },
   "traffic": {
     "source": "hubble",
@@ -271,6 +263,26 @@
         "timestamp": "2026-10-05T12:00:02Z",
         "flowsPerSecond": 200.579,
         "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-10-05T12:15:02Z",
+        "flowsPerSecond": 198.997,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-10-05T12:30:02Z",
+        "flowsPerSecond": 197.89,
+        "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-10-05T12:45:02Z",
+        "flowsPerSecond": 189.083,
+        "dropsPerSecond": 0.034
+      },
+      {
+        "timestamp": "2026-10-05T13:00:02Z",
+        "flowsPerSecond": 189.162,
+        "dropsPerSecond": 0.021
       }
     ]
   },
