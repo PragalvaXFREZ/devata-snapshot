@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-05T09:00:07Z",
+  "generatedAt": "2026-10-05T10:00:31Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -41,8 +41,8 @@
       "role": "control-plane",
       "status": "Ready",
       "vcpu": 4,
-      "memoryGiB": 3.3,
-      "ageDays": 304
+      "memoryGiB": 7.6,
+      "ageDays": 80
     },
     {
       "id": "worker-1",
@@ -57,8 +57,8 @@
       "role": "worker",
       "status": "Ready",
       "vcpu": 4,
-      "memoryGiB": 7.6,
-      "ageDays": 80
+      "memoryGiB": 3.3,
+      "ageDays": 0
     }
   ],
   "services": [
@@ -70,7 +70,7 @@
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "unknown"
+      "status": "up"
     }
   ],
   "storage": {
@@ -88,7 +88,7 @@
   "apps": [
     {
       "name": "argocd",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
@@ -130,13 +130,13 @@
     {
       "name": "hubble-traffic-stream",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "workload"
     },
     {
       "name": "kps",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -154,7 +154,7 @@
     {
       "name": "loki",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -210,7 +210,29 @@
     "deployments": 35,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 87
+    "pods": 108
+  },
+  "traffic": {
+    "source": "hubble",
+    "windowHours": 6,
+    "sampleIntervalMinutes": 15,
+    "samples": [
+      {
+        "timestamp": "2026-10-05T09:30:31Z",
+        "flowsPerSecond": 208.328,
+        "dropsPerSecond": 0.107
+      },
+      {
+        "timestamp": "2026-10-05T09:45:31Z",
+        "flowsPerSecond": 235.693,
+        "dropsPerSecond": 0.184
+      },
+      {
+        "timestamp": "2026-10-05T10:00:31Z",
+        "flowsPerSecond": 207.038,
+        "dropsPerSecond": 0.041
+      }
+    ]
   },
   "logos": {
     "Argo CD app-of-apps": {
