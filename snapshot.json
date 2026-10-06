@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-06T06:00:02Z",
+  "generatedAt": "2026-10-06T07:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -62,7 +62,7 @@
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "up"
+      "status": "unknown"
     }
   ],
   "storage": {
@@ -87,7 +87,7 @@
     {
       "name": "cert-manager",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -99,7 +99,7 @@
     {
       "name": "cloudflare-tunnel",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -122,36 +122,36 @@
     {
       "name": "hubble-traffic-stream",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "workload"
     },
     {
       "name": "kps",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
       "name": "lan-gateway",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "local-path-config",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "loki",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
       "name": "longhorn",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
@@ -163,31 +163,31 @@
     },
     {
       "name": "nvidia-device-plugin",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "promtail",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "sealed-secrets",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "snapshot-publisher",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "workload"
     },
     {
       "name": "uptime-kuma",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
@@ -203,138 +203,6 @@
     "daemonsets": 11,
     "statefulsets": 3,
     "pods": 106
-  },
-  "traffic": {
-    "source": "hubble",
-    "windowHours": 6,
-    "sampleIntervalMinutes": 15,
-    "samples": [
-      {
-        "timestamp": "2026-10-06T00:00:02Z",
-        "flowsPerSecond": 189.986,
-        "dropsPerSecond": 0.031
-      },
-      {
-        "timestamp": "2026-10-06T00:15:02Z",
-        "flowsPerSecond": 190.607,
-        "dropsPerSecond": 0.041
-      },
-      {
-        "timestamp": "2026-10-06T00:30:02Z",
-        "flowsPerSecond": 196.848,
-        "dropsPerSecond": 0.045
-      },
-      {
-        "timestamp": "2026-10-06T00:45:02Z",
-        "flowsPerSecond": 189.079,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-10-06T01:00:02Z",
-        "flowsPerSecond": 190.607,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-10-06T01:15:02Z",
-        "flowsPerSecond": 189.293,
-        "dropsPerSecond": 0.034
-      },
-      {
-        "timestamp": "2026-10-06T01:30:02Z",
-        "flowsPerSecond": 189.655,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-06T01:45:02Z",
-        "flowsPerSecond": 187.683,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-10-06T02:00:02Z",
-        "flowsPerSecond": 191.531,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-06T02:15:02Z",
-        "flowsPerSecond": 191.093,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-06T02:30:02Z",
-        "flowsPerSecond": 190.538,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-10-06T02:45:02Z",
-        "flowsPerSecond": 189.334,
-        "dropsPerSecond": 0.031
-      },
-      {
-        "timestamp": "2026-10-06T03:00:02Z",
-        "flowsPerSecond": 191.852,
-        "dropsPerSecond": 0.031
-      },
-      {
-        "timestamp": "2026-10-06T03:15:02Z",
-        "flowsPerSecond": 190.276,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-10-06T03:30:02Z",
-        "flowsPerSecond": 193.1,
-        "dropsPerSecond": 0.038
-      },
-      {
-        "timestamp": "2026-10-06T03:45:02Z",
-        "flowsPerSecond": 192.972,
-        "dropsPerSecond": 0.072
-      },
-      {
-        "timestamp": "2026-10-06T04:00:02Z",
-        "flowsPerSecond": 190.245,
-        "dropsPerSecond": 0.034
-      },
-      {
-        "timestamp": "2026-10-06T04:15:02Z",
-        "flowsPerSecond": 190.368,
-        "dropsPerSecond": 0.031
-      },
-      {
-        "timestamp": "2026-10-06T04:30:02Z",
-        "flowsPerSecond": 191.293,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-06T04:45:02Z",
-        "flowsPerSecond": 189.355,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-10-06T05:00:02Z",
-        "flowsPerSecond": 190.993,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-06T05:15:02Z",
-        "flowsPerSecond": 189.31,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-06T05:30:02Z",
-        "flowsPerSecond": 190.748,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-10-06T05:45:02Z",
-        "flowsPerSecond": 188.314,
-        "dropsPerSecond": 0.034
-      },
-      {
-        "timestamp": "2026-10-06T06:00:02Z",
-        "flowsPerSecond": 190.538,
-        "dropsPerSecond": 0.041
-      }
-    ]
   },
   "logos": {
     "Argo CD app-of-apps": {
