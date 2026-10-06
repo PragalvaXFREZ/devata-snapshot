@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-06T07:00:02Z",
+  "generatedAt": "2026-10-06T08:04:44Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -62,7 +62,7 @@
     {
       "name": "kps-grafana",
       "exposure": "lan-only",
-      "status": "unknown"
+      "status": "up"
     }
   ],
   "storage": {
@@ -80,14 +80,14 @@
   "apps": [
     {
       "name": "argocd",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "cert-manager",
-      "synced": true,
-      "healthy": false,
+      "synced": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -98,13 +98,13 @@
     },
     {
       "name": "cloudflare-tunnel",
-      "synced": true,
-      "healthy": false,
+      "synced": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
       "name": "devata-root",
-      "synced": true,
+      "synced": false,
       "healthy": true
     },
     {
@@ -115,20 +115,20 @@
     },
     {
       "name": "hello",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "workload"
     },
     {
       "name": "hubble-traffic-stream",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "workload"
     },
     {
       "name": "kps",
-      "synced": true,
-      "healthy": false,
+      "synced": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -139,14 +139,14 @@
     },
     {
       "name": "local-path-config",
-      "synced": false,
+      "synced": true,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "loki",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "platform"
     },
     {
@@ -158,7 +158,7 @@
     {
       "name": "metallb",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -169,7 +169,7 @@
     },
     {
       "name": "promtail",
-      "synced": false,
+      "synced": true,
       "healthy": true,
       "tier": "platform"
     },
@@ -181,19 +181,19 @@
     },
     {
       "name": "snapshot-publisher",
-      "synced": false,
+      "synced": true,
       "healthy": true,
       "tier": "workload"
     },
     {
       "name": "uptime-kuma",
-      "synced": false,
+      "synced": true,
       "healthy": true,
       "tier": "platform"
     },
     {
       "name": "velero",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     }
@@ -202,7 +202,7 @@
     "deployments": 35,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 106
+    "pods": 107
   },
   "logos": {
     "Argo CD app-of-apps": {
