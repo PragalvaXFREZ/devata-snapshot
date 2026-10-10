@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-10T10:00:02Z",
+  "generatedAt": "2026-10-10T11:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -186,12 +186,6 @@
       "tier": "workload"
     },
     {
-      "name": "uptime-kuma",
-      "synced": true,
-      "healthy": true,
-      "tier": "platform"
-    },
-    {
       "name": "velero",
       "synced": true,
       "healthy": true,
@@ -209,26 +203,6 @@
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-10-10T04:00:02Z",
-        "flowsPerSecond": 194.31,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-10-10T04:15:02Z",
-        "flowsPerSecond": 194.666,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-10T04:30:02Z",
-        "flowsPerSecond": 194.324,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-10T04:45:02Z",
-        "flowsPerSecond": 195.034,
-        "dropsPerSecond": 0.017
-      },
       {
         "timestamp": "2026-10-10T05:00:02Z",
         "flowsPerSecond": 194.079,
@@ -333,6 +307,26 @@
         "timestamp": "2026-10-10T10:00:02Z",
         "flowsPerSecond": 194.876,
         "dropsPerSecond": 0.031
+      },
+      {
+        "timestamp": "2026-10-10T10:15:02Z",
+        "flowsPerSecond": 194.51,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-10-10T10:30:02Z",
+        "flowsPerSecond": 194.49,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-10-10T10:45:02Z",
+        "flowsPerSecond": 194.859,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-10-10T11:00:02Z",
+        "flowsPerSecond": 194.01,
+        "dropsPerSecond": 0.028
       }
     ]
   },
@@ -408,10 +402,6 @@
     "sealed-secrets": {
       "url": "https://artifacthub.io/image/ac4848cf-4c78-4511-945d-06a1aa0ccf5a",
       "from": "artifacthub.io/packages/helm/bitnami/sealed-secrets"
-    },
-    "uptime-kuma": {
-      "url": "https://artifacthub.io/image/0ae6a59e-984e-455c-90b2-b1bc98b0e99a",
-      "from": "artifacthub.io/packages/helm/uptime-kuma/uptime-kuma"
     },
     "velero": {
       "url": "https://artifacthub.io/image/c982dc8d-8cf8-4f7c-9ba5-20c72a12cb84",
