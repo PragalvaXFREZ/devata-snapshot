@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-11T11:00:02Z",
+  "generatedAt": "2026-10-11T12:04:24Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -104,7 +104,7 @@
     },
     {
       "name": "devata-root",
-      "synced": true,
+      "synced": false,
       "healthy": true
     },
     {
@@ -157,7 +157,7 @@
     },
     {
       "name": "metallb",
-      "synced": true,
+      "synced": false,
       "healthy": true,
       "tier": "platform"
     },
@@ -197,138 +197,6 @@
     "daemonsets": 11,
     "statefulsets": 3,
     "pods": 106
-  },
-  "traffic": {
-    "source": "hubble",
-    "windowHours": 6,
-    "sampleIntervalMinutes": 15,
-    "samples": [
-      {
-        "timestamp": "2026-10-11T05:00:02Z",
-        "flowsPerSecond": 164.866,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-10-11T05:15:02Z",
-        "flowsPerSecond": 164.659,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-10-11T05:30:02Z",
-        "flowsPerSecond": 164.586,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-11T05:45:02Z",
-        "flowsPerSecond": 164.286,
-        "dropsPerSecond": 0.034
-      },
-      {
-        "timestamp": "2026-10-11T06:00:02Z",
-        "flowsPerSecond": 164.531,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-10-11T06:15:02Z",
-        "flowsPerSecond": 165.101,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-11T06:30:02Z",
-        "flowsPerSecond": 164.259,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-10-11T06:45:02Z",
-        "flowsPerSecond": 164.738,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-10-11T07:00:02Z",
-        "flowsPerSecond": 163.676,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-10-11T07:15:02Z",
-        "flowsPerSecond": 171.117,
-        "dropsPerSecond": 0.09
-      },
-      {
-        "timestamp": "2026-10-11T07:30:02Z",
-        "flowsPerSecond": 163.176,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-11T07:45:02Z",
-        "flowsPerSecond": 163.241,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-10-11T08:00:02Z",
-        "flowsPerSecond": 164.076,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-11T08:15:02Z",
-        "flowsPerSecond": 164.966,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-10-11T08:30:02Z",
-        "flowsPerSecond": 163.597,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-11T08:45:02Z",
-        "flowsPerSecond": 163.206,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-10-11T09:00:02Z",
-        "flowsPerSecond": 163.155,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-10-11T09:15:02Z",
-        "flowsPerSecond": 164.593,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-10-11T09:30:02Z",
-        "flowsPerSecond": 163.293,
-        "dropsPerSecond": 0.017
-      },
-      {
-        "timestamp": "2026-10-11T09:45:02Z",
-        "flowsPerSecond": 163.659,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-10-11T10:00:02Z",
-        "flowsPerSecond": 163.034,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-11T10:15:02Z",
-        "flowsPerSecond": 164.048,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-11T10:30:02Z",
-        "flowsPerSecond": 170.703,
-        "dropsPerSecond": 0.072
-      },
-      {
-        "timestamp": "2026-10-11T10:45:02Z",
-        "flowsPerSecond": 162.862,
-        "dropsPerSecond": 0.01
-      },
-      {
-        "timestamp": "2026-10-11T11:00:02Z",
-        "flowsPerSecond": 162.376,
-        "dropsPerSecond": 0.024
-      }
-    ]
   },
   "logos": {
     "Argo CD app-of-apps": {
