@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-21T11:00:02Z",
+  "generatedAt": "2026-10-21T12:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -204,26 +204,6 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-10-21T05:00:02Z",
-        "flowsPerSecond": 159.703,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-10-21T05:15:02Z",
-        "flowsPerSecond": 158.507,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-10-21T05:30:02Z",
-        "flowsPerSecond": 160.114,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-21T05:45:02Z",
-        "flowsPerSecond": 161.41,
-        "dropsPerSecond": 0.048
-      },
-      {
         "timestamp": "2026-10-21T06:00:02Z",
         "flowsPerSecond": 160.745,
         "dropsPerSecond": 0.017
@@ -326,6 +306,26 @@
       {
         "timestamp": "2026-10-21T11:00:02Z",
         "flowsPerSecond": 159.165,
+        "dropsPerSecond": 0.01
+      },
+      {
+        "timestamp": "2026-10-21T11:15:02Z",
+        "flowsPerSecond": 161.197,
+        "dropsPerSecond": 0.041
+      },
+      {
+        "timestamp": "2026-10-21T11:30:02Z",
+        "flowsPerSecond": 159.552,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-10-21T11:45:02Z",
+        "flowsPerSecond": 159.031,
+        "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-10-21T12:00:02Z",
+        "flowsPerSecond": 159.372,
         "dropsPerSecond": 0.01
       }
     ]
