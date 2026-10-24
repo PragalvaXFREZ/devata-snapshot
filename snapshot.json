@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-10-24T15:00:02Z",
+  "generatedAt": "2026-10-24T16:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -196,33 +196,13 @@
     "deployments": 34,
     "daemonsets": 11,
     "statefulsets": 3,
-    "pods": 108
+    "pods": 107
   },
   "traffic": {
     "source": "hubble",
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-10-24T09:00:02Z",
-        "flowsPerSecond": 164.055,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-10-24T09:15:02Z",
-        "flowsPerSecond": 162.203,
-        "dropsPerSecond": 0.021
-      },
-      {
-        "timestamp": "2026-10-24T09:30:02Z",
-        "flowsPerSecond": 163.969,
-        "dropsPerSecond": 0.052
-      },
-      {
-        "timestamp": "2026-10-24T09:45:02Z",
-        "flowsPerSecond": 163.186,
-        "dropsPerSecond": 0.003
-      },
       {
         "timestamp": "2026-10-24T10:00:02Z",
         "flowsPerSecond": 164.648,
@@ -327,6 +307,26 @@
         "timestamp": "2026-10-24T15:00:02Z",
         "flowsPerSecond": 166.586,
         "dropsPerSecond": 0.038
+      },
+      {
+        "timestamp": "2026-10-24T15:15:02Z",
+        "flowsPerSecond": 162.728,
+        "dropsPerSecond": 0.028
+      },
+      {
+        "timestamp": "2026-10-24T15:30:02Z",
+        "flowsPerSecond": 163.91,
+        "dropsPerSecond": 0.028
+      },
+      {
+        "timestamp": "2026-10-24T15:45:02Z",
+        "flowsPerSecond": 163.317,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-10-24T16:00:02Z",
+        "flowsPerSecond": 164.645,
+        "dropsPerSecond": 0.024
       }
     ]
   },
@@ -372,7 +372,7 @@
       "from": "artifacthub.io/packages/helm/cloudflare-tunnel/cloudflare-tunnel"
     },
     "gateway-api-crds": {
-      "url": "https://artifacthub.io/image/a1242aa6-d99e-4bd7-9243-e4f0274263d9",
+      "url": "https://artifacthub.io/image/ff816caf-a66c-4858-9eae-edddc7876e79",
       "from": "artifacthub.io/packages/helm/spnngl-gateway-api-crds/gateway-api-crds"
     },
     "hubble-ui": {
