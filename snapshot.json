@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-11-05T05:00:02Z",
+  "generatedAt": "2026-11-05T06:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -31,9 +31,9 @@
     "nodesReady": 2,
     "vcpu": 20,
     "memoryGiB": 14.7,
-    "namespaces": 22,
+    "namespaces": 23,
     "exposedServices": 2,
-    "persistentVolumeClaims": 6
+    "persistentVolumeClaims": 7
   },
   "nodes": [
     {
@@ -68,8 +68,8 @@
   "storage": {
     "defaultClass": "local-path",
     "replicated": false,
-    "claims": 6,
-    "totalGiB": 24
+    "claims": 7,
+    "totalGiB": 26
   },
   "gpu": {
     "present": true,
@@ -121,6 +121,12 @@
     },
     {
       "name": "hubble-traffic-stream",
+      "synced": true,
+      "healthy": true,
+      "tier": "workload"
+    },
+    {
+      "name": "infra-portal",
       "synced": true,
       "healthy": true,
       "tier": "workload"
@@ -193,36 +199,16 @@
     }
   ],
   "workloads": {
-    "deployments": 34,
+    "deployments": 35,
     "daemonsets": 11,
-    "statefulsets": 3,
-    "pods": 107
+    "statefulsets": 4,
+    "pods": 110
   },
   "traffic": {
     "source": "hubble",
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-11-04T23:00:02Z",
-        "flowsPerSecond": 82.034,
-        "dropsPerSecond": 0.028
-      },
-      {
-        "timestamp": "2026-11-04T23:15:02Z",
-        "flowsPerSecond": 82.141,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-11-04T23:30:02Z",
-        "flowsPerSecond": 81.71,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-11-04T23:45:02Z",
-        "flowsPerSecond": 82.19,
-        "dropsPerSecond": 0.014
-      },
       {
         "timestamp": "2026-11-05T00:00:02Z",
         "flowsPerSecond": 82.19,
@@ -327,6 +313,26 @@
         "timestamp": "2026-11-05T05:00:02Z",
         "flowsPerSecond": 325.736,
         "dropsPerSecond": 0.172
+      },
+      {
+        "timestamp": "2026-11-05T05:15:02Z",
+        "flowsPerSecond": 156.107,
+        "dropsPerSecond": 0.017
+      },
+      {
+        "timestamp": "2026-11-05T05:30:02Z",
+        "flowsPerSecond": 185.397,
+        "dropsPerSecond": 0.086
+      },
+      {
+        "timestamp": "2026-11-05T05:45:02Z",
+        "flowsPerSecond": 180.983,
+        "dropsPerSecond": 0.028
+      },
+      {
+        "timestamp": "2026-11-05T06:00:02Z",
+        "flowsPerSecond": 180.834,
+        "dropsPerSecond": 0.024
       }
     ]
   },
