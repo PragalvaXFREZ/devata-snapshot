@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-11-12T02:00:02Z",
+  "generatedAt": "2026-11-12T03:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -210,26 +210,6 @@
     "sampleIntervalMinutes": 15,
     "samples": [
       {
-        "timestamp": "2026-11-11T20:00:02Z",
-        "flowsPerSecond": 182.914,
-        "dropsPerSecond": 0.059
-      },
-      {
-        "timestamp": "2026-11-11T20:15:02Z",
-        "flowsPerSecond": 181.841,
-        "dropsPerSecond": 0.014
-      },
-      {
-        "timestamp": "2026-11-11T20:30:02Z",
-        "flowsPerSecond": 181.862,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-11-11T20:45:02Z",
-        "flowsPerSecond": 182.041,
-        "dropsPerSecond": 0.031
-      },
-      {
         "timestamp": "2026-11-11T21:00:02Z",
         "flowsPerSecond": 182.245,
         "dropsPerSecond": 0.034
@@ -333,6 +313,26 @@
         "timestamp": "2026-11-12T02:00:02Z",
         "flowsPerSecond": 182.969,
         "dropsPerSecond": 0.003
+      },
+      {
+        "timestamp": "2026-11-12T02:15:02Z",
+        "flowsPerSecond": 189.969,
+        "dropsPerSecond": 0.09
+      },
+      {
+        "timestamp": "2026-11-12T02:30:02Z",
+        "flowsPerSecond": 182.734,
+        "dropsPerSecond": 0.014
+      },
+      {
+        "timestamp": "2026-11-12T02:45:02Z",
+        "flowsPerSecond": 181.938,
+        "dropsPerSecond": 0.007
+      },
+      {
+        "timestamp": "2026-11-12T03:00:02Z",
+        "flowsPerSecond": 181.986,
+        "dropsPerSecond": 0.014
       }
     ]
   },
@@ -378,8 +378,8 @@
       "from": "artifacthub.io/packages/helm/cloudflare-tunnel/cloudflare-tunnel"
     },
     "gateway-api-crds": {
-      "url": "https://artifacthub.io/image/ff816caf-a66c-4858-9eae-edddc7876e79",
-      "from": "artifacthub.io/packages/helm/spnngl-gateway-api-crds/gateway-api-crds"
+      "url": "https://artifacthub.io/image/01ce3e96-8881-416d-b6c1-e2da20dcdaa9",
+      "from": "artifacthub.io/packages/helm/peterweissdk/gateway-api-crds"
     },
     "hubble-ui": {
       "url": "https://artifacthub.io/image/b819e3d0-ab7b-4a20-aac1-34a992ab54d7",
