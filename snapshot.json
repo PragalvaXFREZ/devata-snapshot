@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-11-18T23:00:02Z",
+  "generatedAt": "2026-11-19T00:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -99,7 +99,7 @@
     {
       "name": "cloudflare-tunnel",
       "synced": true,
-      "healthy": true,
+      "healthy": false,
       "tier": "platform"
     },
     {
@@ -202,33 +202,13 @@
     "deployments": 35,
     "daemonsets": 11,
     "statefulsets": 4,
-    "pods": 110
+    "pods": 111
   },
   "traffic": {
     "source": "hubble",
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-11-18T17:00:02Z",
-        "flowsPerSecond": 176.421,
-        "dropsPerSecond": 0.141
-      },
-      {
-        "timestamp": "2026-11-18T17:15:02Z",
-        "flowsPerSecond": 180.61,
-        "dropsPerSecond": 0.007
-      },
-      {
-        "timestamp": "2026-11-18T17:30:02Z",
-        "flowsPerSecond": 187.607,
-        "dropsPerSecond": 0.083
-      },
-      {
-        "timestamp": "2026-11-18T17:45:02Z",
-        "flowsPerSecond": 180.47,
-        "dropsPerSecond": 0.017
-      },
       {
         "timestamp": "2026-11-18T18:00:02Z",
         "flowsPerSecond": 183.259,
@@ -333,6 +313,26 @@
         "timestamp": "2026-11-18T23:00:02Z",
         "flowsPerSecond": 181.414,
         "dropsPerSecond": 0.003
+      },
+      {
+        "timestamp": "2026-11-18T23:15:02Z",
+        "flowsPerSecond": 180.821,
+        "dropsPerSecond": 0.031
+      },
+      {
+        "timestamp": "2026-11-18T23:30:02Z",
+        "flowsPerSecond": 181.224,
+        "dropsPerSecond": 0.021
+      },
+      {
+        "timestamp": "2026-11-18T23:45:02Z",
+        "flowsPerSecond": 181.938,
+        "dropsPerSecond": 0.097
+      },
+      {
+        "timestamp": "2026-11-19T00:00:02Z",
+        "flowsPerSecond": 192.962,
+        "dropsPerSecond": 0.303
       }
     ]
   },
