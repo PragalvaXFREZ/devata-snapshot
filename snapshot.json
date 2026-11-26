@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-11-26T21:00:02Z",
+  "generatedAt": "2026-11-26T22:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -31,9 +31,9 @@
     "nodesReady": 2,
     "vcpu": 20,
     "memoryGiB": 14.7,
-    "namespaces": 24,
+    "namespaces": 26,
     "exposedServices": 2,
-    "persistentVolumeClaims": 7
+    "persistentVolumeClaims": 9
   },
   "nodes": [
     {
@@ -68,8 +68,8 @@
   "storage": {
     "defaultClass": "local-path",
     "replicated": false,
-    "claims": 7,
-    "totalGiB": 26
+    "claims": 9,
+    "totalGiB": 36
   },
   "gpu": {
     "present": true,
@@ -104,6 +104,12 @@
     },
     {
       "name": "cloudflare-tunnel",
+      "synced": true,
+      "healthy": true,
+      "tier": "platform"
+    },
+    {
+      "name": "cloudnative-pg",
       "synced": true,
       "healthy": true,
       "tier": "platform"
@@ -180,6 +186,12 @@
       "tier": "platform"
     },
     {
+      "name": "postgres",
+      "synced": true,
+      "healthy": true,
+      "tier": "platform"
+    },
+    {
       "name": "promtail",
       "synced": true,
       "healthy": true,
@@ -205,36 +217,16 @@
     }
   ],
   "workloads": {
-    "deployments": 36,
+    "deployments": 37,
     "daemonsets": 11,
     "statefulsets": 5,
-    "pods": 109
+    "pods": 114
   },
   "traffic": {
     "source": "hubble",
     "windowHours": 6,
     "sampleIntervalMinutes": 15,
     "samples": [
-      {
-        "timestamp": "2026-11-26T15:00:02Z",
-        "flowsPerSecond": 182.034,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-11-26T15:15:02Z",
-        "flowsPerSecond": 179.728,
-        "dropsPerSecond": 0.024
-      },
-      {
-        "timestamp": "2026-11-26T15:30:02Z",
-        "flowsPerSecond": 180.345,
-        "dropsPerSecond": 0.003
-      },
-      {
-        "timestamp": "2026-11-26T15:45:02Z",
-        "flowsPerSecond": 179.672,
-        "dropsPerSecond": 0.028
-      },
       {
         "timestamp": "2026-11-26T16:00:02Z",
         "flowsPerSecond": 181.486,
@@ -339,6 +331,26 @@
         "timestamp": "2026-11-26T21:00:02Z",
         "flowsPerSecond": 209.89,
         "dropsPerSecond": 0.086
+      },
+      {
+        "timestamp": "2026-11-26T21:15:02Z",
+        "flowsPerSecond": 536.907,
+        "dropsPerSecond": 0.1
+      },
+      {
+        "timestamp": "2026-11-26T21:30:02Z",
+        "flowsPerSecond": 209.6,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-11-26T21:45:02Z",
+        "flowsPerSecond": 203.238,
+        "dropsPerSecond": 0.024
+      },
+      {
+        "timestamp": "2026-11-26T22:00:02Z",
+        "flowsPerSecond": 205.607,
+        "dropsPerSecond": 0.034
       }
     ]
   },
@@ -387,6 +399,10 @@
       "url": "https://artifacthub.io/image/722cae13-1956-400d-9018-9ca0c3cf5e95",
       "from": "artifacthub.io/packages/helm/cloudflare-tunnel/cloudflare-tunnel"
     },
+    "cloudnative-pg": {
+      "url": "https://artifacthub.io/image/b819e3d0-ab7b-4a20-aac1-34a992ab54d7",
+      "from": "artifacthub.io/packages/helm/quench-cloudnative-pg/cloudnative-pg"
+    },
     "gateway-api-crds": {
       "url": "https://artifacthub.io/image/ff816caf-a66c-4858-9eae-edddc7876e79",
       "from": "artifacthub.io/packages/helm/spnngl-gateway-api-crds/gateway-api-crds"
@@ -410,6 +426,10 @@
     "nvidia-device-plugin": {
       "url": "https://artifacthub.io/image/cce37237-c1ee-404c-bc52-07262ed73d9c",
       "from": "artifacthub.io/packages/helm/alekc/nvidia-device-plugin"
+    },
+    "postgres": {
+      "url": "https://artifacthub.io/image/b689d3b9-c7e3-4da3-84b2-6aaea35a6cb2",
+      "from": "artifacthub.io/packages/helm/cloudpirates-postgres/postgres"
     },
     "promtail": {
       "url": "https://artifacthub.io/image/c3c27bcf-e74a-416f-85bb-111ccf93966e",
