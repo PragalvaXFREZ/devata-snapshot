@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.5.0",
-  "generatedAt": "2026-11-28T16:00:02Z",
+  "generatedAt": "2026-11-28T17:00:02Z",
   "generator": {
     "name": "devata-snapshot-publisher",
     "version": "0.5.0",
@@ -42,7 +42,7 @@
       "status": "Ready",
       "vcpu": 4,
       "memoryGiB": 7.6,
-      "ageDays": 134
+      "ageDays": 135
     },
     {
       "id": "worker-1",
@@ -134,7 +134,7 @@
     {
       "name": "hubble-traffic-stream",
       "synced": true,
-      "healthy": false,
+      "healthy": true,
       "tier": "workload"
     },
     {
@@ -220,7 +220,7 @@
     "deployments": 37,
     "daemonsets": 11,
     "statefulsets": 5,
-    "pods": 96
+    "pods": 97
   },
   "traffic": {
     "source": "hubble",
@@ -281,6 +281,26 @@
         "timestamp": "2026-11-28T16:00:02Z",
         "flowsPerSecond": 209.307,
         "dropsPerSecond": 0.028
+      },
+      {
+        "timestamp": "2026-11-28T16:15:02Z",
+        "flowsPerSecond": 203.09,
+        "dropsPerSecond": 0.003
+      },
+      {
+        "timestamp": "2026-11-28T16:30:02Z",
+        "flowsPerSecond": 202.49,
+        "dropsPerSecond": 0.069
+      },
+      {
+        "timestamp": "2026-11-28T16:45:02Z",
+        "flowsPerSecond": 208.314,
+        "dropsPerSecond": 0.672
+      },
+      {
+        "timestamp": "2026-11-28T17:00:02Z",
+        "flowsPerSecond": 196.81,
+        "dropsPerSecond": 0.062
       }
     ]
   },
